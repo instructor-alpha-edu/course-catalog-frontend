@@ -4,7 +4,7 @@ import { Link } from "react-router";
 import { axiosInstance } from "../../services/axios";
 import CourseCard from "../../components/CourseCard";
 import Loader from "../../components/Loader";
-import { Roles } from "../../utils/consts";
+import { Roles, DASHBOARD_CREATE_COURSE_PAGE_ROUTE } from "../../utils/consts";
 
 export default function DashboardCoursesPage() {
   const userRole = useSelector(state => state.user.user.role);
@@ -31,7 +31,7 @@ export default function DashboardCoursesPage() {
       <div className="courses-header">
         <h1 className="title">Каталог курсов</h1>
         {userRole !== Roles.STUDENT && (
-          <Link to="" className="btn">
+          <Link to={DASHBOARD_CREATE_COURSE_PAGE_ROUTE} className="btn">
             Добавить курс
           </Link>
         )}

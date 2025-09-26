@@ -59,7 +59,7 @@ export default function LoginPage() {
         <div className="form-block">
           <span className="form-label">Пароль</span>
           <input
-            type="text"
+            type="password"
             className="form-input"
             placeholder="Введите свой пароль"
             value={password}

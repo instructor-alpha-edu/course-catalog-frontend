@@ -5,6 +5,7 @@ export const REGISTER_PAGE_ROUTE = "/register";
 
 export const DASHBOARD_PROFILE_PAGE_ROUTE = "/dashboard/profile";
 export const DASHBOARD_COURSES_PAGE_ROUTE = "/dashboard/courses";
+export const DASHBOARD_CREATE_COURSE_PAGE_ROUTE = "/dashboard/courses/create";
 export const DASHBOARD_ENROLLMENTS_PAGE_ROUTE = "/dashboard/enrollments";
 export const DASHBOARD_USERS_PAGE_ROUTE = "/dashboard/users";
 

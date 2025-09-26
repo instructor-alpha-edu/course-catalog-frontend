@@ -515,3 +515,19 @@ th {
     box-shadow: 0 2.5em 0 0;
   }
 }
+
+.create-container {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-preview {
+  margin-top: 16px;
+  max-width: 240px;
+}
+
+.image-preview-img {
+  width: 240px;
+}

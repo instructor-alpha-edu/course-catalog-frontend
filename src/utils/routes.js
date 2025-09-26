@@ -16,10 +16,12 @@ import {
   DASHBOARD_ENROLLMENTS_PAGE_ROUTE,
   DASHBOARD_USERS_PAGE_ROUTE,
   Roles,
+  DASHBOARD_CREATE_COURSE_PAGE_ROUTE,
 } from "./consts";
 import { RiUser3Line } from "react-icons/ri";
 import { MdSchool } from "react-icons/md";
 import { LuUsers, LuList } from "react-icons/lu";
+import DashboardCreateCoursePage from "../pages/private/CreateCoursePage";
 
 export const routes = [
   {
@@ -51,6 +53,11 @@ export const routes = [
     path: DASHBOARD_COURSES_PAGE_ROUTE,
     element: DashboardCoursesPage,
     roles: [Roles.STUDENT, Roles.TEACHER, Roles.ADMIN],
+  },
+  {
+    path: DASHBOARD_CREATE_COURSE_PAGE_ROUTE,
+    element: DashboardCreateCoursePage,
+    roles: [Roles.TEACHER, Roles.ADMIN],
   },
   {
     path: DASHBOARD_ENROLLMENTS_PAGE_ROUTE,
