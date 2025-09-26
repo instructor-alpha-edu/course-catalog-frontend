@@ -1,7 +1,7 @@
-import { Routes, Route } from "react-router";
+import { Routes, Route, Navigate } from "react-router";
 import { useSelector } from "react-redux";
 import { routes } from "../utils/routes";
-import { Roles } from "../utils/consts";
+import { Roles, MAIN_PAGE_ROUTE, DASHBOARD_PROFILE_PAGE_ROUTE } from "../utils/consts";
 
 export default function AppRouter() {
   const user = useSelector(state => state.user.user);
